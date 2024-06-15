@@ -1,0 +1,122 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Donations Magdi
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.DonationsMagdi {
+  position: relative;
+  padding-top: calc(var(--main-padding-top) * 1.5);
+  padding-bottom: calc(var(--main-padding-bottom) * 1.5);
+  background-color: #f3f3f3;
+}
+.DonationsMagdi .container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  height: 100%;
+}
+
+.DonationsMagdi .container .left {
+  position: relative;
+  display: flex;
+  padding: 20px;
+  min-height: 500px;
+  min-width: 400px;
+  height: 100%;
+}
+.DonationsMagdi .container .left::before {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 90%;
+  background-color: var(--dark-color);
+  bottom: 0;
+  right: 0;
+  border-radius: 32px;
+}
+.DonationsMagdi .container .left img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 32px;
+}
+@media (max-width: 992px) {
+  .DonationsMagdi .container .left {
+    display: none;
+  }
+}
+.DonationsMagdi .container .right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.DonationsMagdi .container .right .info {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 992px) {
+  .DonationsMagdi .container .right .info {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.DonationsMagdi .container .right .colabiration {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  height: 100%;
+}
+
+.DonationsMagdi .container .right .spritter {
+  position: relative;
+  width: 0.5px;
+  height: 60px;
+  background-color: #423f53;
+  display: flex;
+  align-self: center;
+}
+.DonationsMagdi .container .right img {
+  position: relative;
+  height: auto;
+  max-width: 100%;
+}
+
+.DonationsMagdi .container .right h1 {
+  position: relative;
+  color: #000;
+  font-size: 20px;
+  margin: 0;
+}
+
+.DonationsMagdi .container .right span {
+  position: relative;
+  color: #000;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.DonationsMagdi .container .right p {
+  position: relative;
+  width: 65%;
+  color: #656460;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+@media (max-width: 992px) {
+  .DonationsMagdi .container .right .colabiration {
+    gap: 20px;
+    justify-content: center;
+  }
+  .DonationsMagdi .container .right p {
+    width: 100%;
+  }
+}

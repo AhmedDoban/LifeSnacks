@@ -1,0 +1,80 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Find Items
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.FindItems {
+  position: relative;
+  padding-top: calc(var(--main-padding-top) * 1.5);
+  padding-bottom: calc(var(--main-padding-bottom) * 1.5);
+}
+.FindItems .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.FindItems .container .filter-part {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FindItems .container .filter-part ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #dad9d0;
+}
+
+.FindItems .container .filter-part ul li {
+  position: relative;
+  width: 140px;
+  height: 40px;
+  cursor: pointer;
+  padding: 0 30px;
+  transition: var(--main-transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FindItems .container .filter-part ul li img {
+  position: relative;
+  max-width: 100%;
+  height: fit-content;
+  max-height: 100%;
+  object-fit: cover;
+}
+.FindItems .container .filter-part ul li.active {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.FindItems .container .FindItemsContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.FindItems .container .FindItemsContainer .card {
+  position: relative;
+  padding: 15px;
+}
+.FindItems .container .FindItemsContainer .card .img-box {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FindItems .container .FindItemsContainer .card .img-box img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

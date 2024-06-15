@@ -1,0 +1,177 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Recipes Details
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.RecipesDetails {
+  position: relative;
+  padding-top: calc(var(--main-padding-top) * 1.5);
+  padding-bottom: calc(var(--main-padding-bottom) * 1.5);
+}
+.RecipesDetails .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 120px;
+}
+@media (max-width: 992px) {
+  .RecipesDetails .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Recipes Details img
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.RecipesDetails .container .details-img {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  border-radius: 16px;
+}
+@media (max-width: 992px) {
+  .RecipesDetails .container .details-img {
+    height: 300px;
+  }
+}
+.RecipesDetails .container .details-img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.RecipesDetails .container .details-img::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  left: 0;
+  top: 0;
+  z-index: 1;
+  border-radius: 16px;
+}
+.RecipesDetails .container .details-img .PlayVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #edf4ec;
+  font-size: 50px;
+  z-index: 2;
+  cursor: pointer;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Recipes Details box
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.RecipesDetails .container > .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.RecipesDetails .container .box h3 {
+  font-size: 14px;
+  color: var(--dark-color);
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+.RecipesDetails .container .box .more-details {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.RecipesDetails .container .box .more-details h1 {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 992px) {
+  .RecipesDetails .container .box .more-details h1 {
+    font-size: 20px;
+  }
+}
+.RecipesDetails .container .box .more-details .timing {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.RecipesDetails .container .box .more-details .timing .box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 12px;
+  color: var(--main-color);
+}
+.RecipesDetails .container .box .more-details .timing .box span {
+  color: var(--dark-color);
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Recipes Details box style2
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.RecipesDetails .container .style-2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #edf4ec;
+  padding: 30px;
+  border-radius: 20px;
+}
+.RecipesDetails .container .style-2 h4 {
+  position: relative;
+  font-size: 22px;
+  color: var(--dark-color);
+  font-weight: 600;
+}
+.RecipesDetails .container .style-2 ul {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 15px;
+}
+@media (max-width: 992px) {
+  .RecipesDetails .container .style-2 ul {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+.RecipesDetails .container .style-2 ul.Check li {
+  position: relative;
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.RecipesDetails .container .style-2 ul.Number {
+  counter-reset: Number;
+  gap: 3px;
+}
+.RecipesDetails .container .style-2 ul.Number li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 100;
+  color: var(--dark-color);
+}
+.RecipesDetails .container .style-2 ul.Check li::before {
+  position: absolute;
+  content: "\f00c";
+  font-family: "font Awesome 5 free";
+  font-weight: 900;
+  color: var(--main-color);
+  left: 0;
+  font-size: 18px;
+}
+.RecipesDetails .container .style-2 ul.Number li::before {
+  position: absolute;
+  counter-increment: Number;
+  content: counter(Number) "-";
+  color: var(--dark-color);
+  left: 0;
+  font-size: 14px;
+}

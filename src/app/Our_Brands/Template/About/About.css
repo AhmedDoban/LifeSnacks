@@ -1,0 +1,89 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# About
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Our_BrandsAbout {
+  position: relative;
+  padding-top: calc(var(--main-padding-top) * 1.5);
+  padding-bottom: calc(var(--main-padding-bottom) * 1.5);
+}
+.Our_BrandsAbout .container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  height: 100%;
+}
+
+.Our_BrandsAbout .container .left {
+  position: relative;
+  padding: 20px;
+  max-height: 300px;
+  height: 300px;
+  min-width: 500px;
+}
+.Our_BrandsAbout .container .left::before {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 90%;
+  background-color: #e7e7ea;
+  bottom: 0;
+  right: 0;
+  border-radius: 32px;
+}
+.Our_BrandsAbout .container .left img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+}
+@media (max-width: 992px) {
+  .Our_BrandsAbout .container .left {
+    display: none;
+  }
+}
+.Our_BrandsAbout .container .right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .Our_BrandsAbout .container .right {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.Our_BrandsAbout .container .right span {
+  position: relative;
+  font-size: 16px;
+  color: #fefdfc;
+}
+.Our_BrandsAbout .container .right h1 {
+  position: relative;
+  font-size: 64px;
+  color: #fefdfc;
+  margin: 0 !important;
+  line-height: 50px;
+}
+@media (max-width: 992px) {
+  .Our_BrandsAbout .container .right h1 {
+    font-size: 50px;
+  }
+}
+
+.Our_BrandsAbout .container .right p {
+  position: relative;
+  font-size: 14px;
+  color: #fefdfc;
+  line-height: 1.3;
+  font-weight: 300;
+}
+
+.Our_BrandsAbout .container .right img {
+  position: relative;
+  width: 100px;
+  height: auto;
+}

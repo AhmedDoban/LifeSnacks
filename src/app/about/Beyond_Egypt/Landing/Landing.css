@@ -1,0 +1,66 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Landing
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Beyond_EgyptLanding {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url("../../../../../public/BeyondEgyptLanding.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.Beyond_EgyptLanding::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 0;
+  top: 0;
+}
+
+.Beyond_EgyptLanding .container {
+  position: relative;
+  height: 100%;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.Beyond_EgyptLanding .container .navigation-info {
+  position: relative;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  color: #fefdfc;
+  font-size: 14px;
+  font-weight: 400;
+}
+.Beyond_EgyptLanding .container .navigation-info a {
+  color: #fefdfc;
+  cursor: pointer;
+}
+.Beyond_EgyptLanding .container .box-info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.Beyond_EgyptLanding .container .box-info h1 {
+  position: relative;
+  font-size: 50px;
+  color: #fefdfc;
+  text-align: center;
+  font-weight: 600;
+}
+@media (max-width: 992px) {
+  .Beyond_EgyptLanding .container .box-info h1 {
+    font-size: 35px;
+  }
+}

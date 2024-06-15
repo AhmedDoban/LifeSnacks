@@ -1,0 +1,84 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Tasting
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Tasting {
+  position: relative;
+  padding-top: calc(var(--main-padding-top) * 1.5);
+  padding-bottom: calc(var(--main-padding-bottom) * 1.5);
+  background-color: #f3f3f3;
+  overflow: hidden;
+}
+
+.Tasting .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+@media (max-width: 992px) {
+  .Tasting .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.Tasting .container .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Tasting .container .left,
+.Tasting .container .right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Tasting .container .box span {
+  position: relative;
+  color: #130f28;
+  font-size: 14px;
+  font-weight: 400;
+}
+.Tasting .container .box h1 {
+  position: relative;
+  color: #130f28;
+  font-size: 60px;
+  font-weight: 600;
+}
+@media (max-width: 992px) {
+  .Tasting .container .box h1 {
+    font-size: 35px;
+  }
+}
+.Tasting .container .box h3 {
+  position: relative;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+.Tasting .container .box p {
+  position: relative;
+  color: #1d1e3e;
+  font-size: 14px;
+  font-weight: 300;
+}
+.Tasting .container .left .box .img-box {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.Tasting .container .box .img-box img {
+  position: relative;
+  object-fit: cover;
+  border-radius: 24px;
+}
+@media (max-width: 992px) {
+  .Tasting .container .box .img-box {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}

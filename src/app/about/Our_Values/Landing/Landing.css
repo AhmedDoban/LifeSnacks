@@ -1,0 +1,86 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Landing
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Our_ValuesLanding {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url("../../../../../public/OurValues.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.Our_ValuesLanding::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 0;
+  top: 0;
+}
+
+.Our_ValuesLanding .container {
+  position: relative;
+  height: 100%;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.Our_ValuesLanding .container .navigation-info {
+  position: relative;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  color: #fefdfc;
+  font-size: 14px;
+  font-weight: 400;
+}
+.Our_ValuesLanding .container .navigation-info a {
+  color: #fefdfc;
+  cursor: pointer;
+}
+.Our_ValuesLanding .container .box-info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.Our_ValuesLanding .container .box-info h1 {
+  position: relative;
+  font-size: 50px;
+  color: #fefdfc;
+  text-align: center;
+  font-weight: 600;
+}
+@media (max-width: 992px) {
+  .Our_ValuesLanding .container .box-info h1 {
+    font-size: 35px;
+  }
+}
+.Our_ValuesLanding .container .box-info .actions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.Our_ValuesLanding .container .box-info .actions a {
+  position: relative;
+  border: 1px solid #fefdfc;
+  color: #fefdfc;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: var(--main-transition);
+}
+.Our_ValuesLanding .container .box-info .actions a:hover {
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+}

@@ -1,0 +1,64 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Landing
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.sustainabilityLanding {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url("../../../../../public/sustainabilityLanding.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+}
+.sustainabilityLanding::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 0;
+  top: 0;
+}
+
+.sustainabilityLanding .container {
+  position: relative;
+  height: 100%;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.sustainabilityLanding .container .navigation-info {
+  position: relative;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  color: #fefdfc;
+  font-size: 14px;
+  font-weight: 400;
+}
+.sustainabilityLanding .container .navigation-info a {
+  color: #fefdfc;
+  cursor: pointer;
+}
+.sustainabilityLanding .container .box-info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sustainabilityLanding .container .box-info h1 {
+  position: relative;
+  font-size: 50px;
+  color: #fefdfc;
+  text-align: center;
+  font-weight: 600;
+}
+@media (max-width: 992px) {
+  .sustainabilityLanding .container .box-info h1 {
+    font-size: 35px;
+  }
+}

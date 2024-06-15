@@ -1,0 +1,50 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Landing
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Our_BrandsLanding {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+}
+.Our_BrandsLanding::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
+}
+
+.Our_BrandsLanding .container {
+  position: relative;
+  height: 100%;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Our_BrandsLanding .container img {
+  margin: 0 auto;
+  width: 300px;
+  height: fit-content;
+}
+.Our_BrandsLanding .container .navigation-info {
+  position: relative;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  color: #fefdfc;
+  font-size: 14px;
+  font-weight: 400;
+}
+.Our_BrandsLanding .container .navigation-info a {
+  color: #fefdfc;
+  cursor: pointer;
+}

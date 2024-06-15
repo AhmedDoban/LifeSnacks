@@ -1,0 +1,250 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Job Offers Details
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.JobOfferDetailsInfo {
+  position: relative;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+
+.JobOfferDetailsInfo .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+}
+@media (max-width: 992px) {
+  .JobOfferDetailsInfo .container {
+    padding: 0 15px;
+  }
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Job Offers Details box
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.JobOfferDetailsInfo .container .box {
+  position: relative;
+  background-color: #edf4ec;
+  padding: 50px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.JobOfferDetailsInfo .container .box h1 {
+  margin: 0;
+}
+.JobOfferDetailsInfo .container .box > h1 {
+  font-size: 46px;
+  font-weight: 600;
+}
+.JobOfferDetailsInfo .container .box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Job Offers Details status
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.JobOfferDetailsInfo .container .box .job-status {
+  position: absolute;
+  top: -10px;
+  right: 70px;
+  background-color: #da1c21;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+  width: 55px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Job Offers Details  date and location 
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.JobOfferDetailsInfo .container .box .date-location {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.JobOfferDetailsInfo .container .box .date-location div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.JobOfferDetailsInfo .container .box .date-location div i {
+  position: relative;
+  color: var(--main-color);
+  font-size: 14px;
+}
+.JobOfferDetailsInfo .container .box .date-location div p {
+  position: relative;
+  font-size: 14px;
+  color: rgb(74, 74, 74);
+  font-weight: 100;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Job Offers Details  job description
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.JobOfferDetailsInfo .container .box .job-description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.JobOfferDetailsInfo .container .box .job-description h1 {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.JobOfferDetailsInfo .container .box .job-description p {
+  position: relative;
+  font-size: 14px;
+  font-weight: 100;
+  color: rgb(74, 74, 74);
+  line-height: normal;
+}
+.JobOfferDetailsInfo .container .box .job-description ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.JobOfferDetailsInfo .container .box .job-description ul li {
+  position: relative;
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: 100;
+  color: rgb(74, 74, 74);
+}
+
+.JobOfferDetailsInfo .container .box .job-description ul li::before {
+  position: absolute;
+  content: "";
+  background-color: rgb(74, 74, 74);
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Job Offers Details  job description
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.JobOfferDetailsInfo .container .job-requirements {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.JobOfferDetailsInfo .container .job-requirements h1 {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.JobOfferDetailsInfo .container .job-requirements ul {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px;
+}
+@media (max-width: 992px) {
+  .JobOfferDetailsInfo .container .job-requirements ul {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+.JobOfferDetailsInfo .container .job-requirements ul.Check li {
+  position: relative;
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: 100;
+  color: rgb(74, 74, 74);
+}
+.JobOfferDetailsInfo .container .job-requirements ul.Check li::before {
+  position: absolute;
+  content: "\f00c";
+  font-family: "font Awesome 5 free";
+  font-weight: 900;
+  color: var(--main-color);
+  left: 0;
+  font-size: 14px;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Job Offers Details  job offer
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.JobOfferDetailsInfo .container .job-offer {
+  position: relative;
+}
+.JobOfferDetailsInfo .container .job-offer h1 {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.JobOfferDetailsInfo .container .job-offer ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.JobOfferDetailsInfo .container .job-offer ul li {
+  position: relative;
+  padding-left: 30px;
+  font-size: 14px;
+  font-weight: 100;
+  color: rgb(74, 74, 74);
+}
+
+.JobOfferDetailsInfo .container .job-offer ul li::before {
+  position: absolute;
+  content: "";
+  background-color: rgb(74, 74, 74);
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+}
+.JobOfferDetailsInfo .container .job-offer p {
+  position: relative;
+  font-size: 14px;
+  color: rgb(74, 74, 74);
+  font-weight: 100;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Job Offers Details  job description
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.JobOfferDetailsInfo .container .job-apply {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.JobOfferDetailsInfo .container .job-apply input {
+  position: relative;
+  border: 1px solid #b6b5bc;
+  outline: 0;
+  padding: 10px 14px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 40%;
+  font-size: 14px;
+  font-weight: 300;
+}
+.JobOfferDetailsInfo .container .job-apply button {
+  position: relative;
+  border: 1px solid #b6b5bc;
+  outline: 0;
+  padding: 10px 14px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.JobOfferDetailsInfo .container .job-apply button:hover {
+  background-color: var(--dark-color);
+}

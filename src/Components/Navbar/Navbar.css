@@ -1,0 +1,346 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Navbar
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fefdfc;
+  height: 76px;
+  z-index: 9999;
+}
+
+.Navbar .container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Navbar logo
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Navbar .container .logo {
+  position: relative;
+  width: 97px;
+  height: auto;
+}
+
+.Navbar .container .logo img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Navbar Links
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Navbar .navlinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+}
+
+@media (max-width: 992px) {
+  .Navbar .navlinks {
+    display: none;
+  }
+}
+.Navbar .navlinks li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  cursor: pointer;
+}
+.Navbar .navlinks li i {
+  cursor: pointer;
+}
+.Navbar .navlinks li a,
+.Navbar .navlinks li span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  transition: var(--main-transition);
+}
+.Navbar .navlinks li a.active {
+  color: var(--main-color);
+}
+.Navbar .navlinks .OtherLinks {
+  position: absolute;
+  opacity: 0;
+  display: none;
+  gap: 26px;
+  top: 100%;
+  left: 0;
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0px 0px 20px 20px;
+  padding: 20px;
+  transition: var(--main-transition);
+  transform: translateY(0);
+}
+.Navbar .navlinks li .OtherLinks.active {
+  opacity: 1;
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .Navbar .navlinks .OtherLinks {
+    flex-direction: column-reverse;
+  }
+}
+.Navbar .navlinks .OtherLinks .OtherNavLinkes {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.Navbar .navlinks .OtherLinks .OtherNavLinkes li {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.Navbar .navlinks .OtherLinks .OtherNavLinkes li a {
+  position: relative;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  transition: var(--main-transition);
+}
+.Navbar .navlinks .OtherLinks .OtherNavLinkes li a::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  left: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  transition: var(--main-transition);
+}
+.Navbar .navlinks .OtherLinks .OtherNavLinkes li a:hover::after,
+.Navbar .navlinks .OtherLinks .OtherNavLinkes li a.active::after {
+  background-color: #fff;
+}
+.Navbar .navlinks .OtherLinks .OtherNavLinkes li a:hover,
+.Navbar .navlinks .OtherLinks .OtherNavLinkes li a.active {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.Navbar .navlinks .OtherLinks .right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.Navbar .navlinks .OtherLinks .right img {
+  position: relative;
+  border-radius: 20px;
+  width: 244px;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .Navbar .navlinks .OtherLinks .right {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 992px) {
+  .Navbar .navlinks .OtherLinks .right img {
+    width: 150px;
+    height: 150px;
+  }
+}
+.Navbar .navlinks .OtherLinks .OurBrandsContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100%;
+}
+
+.Navbar .navlinks .OtherLinks .OurBrandsContainer .box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+}
+.Navbar .navlinks .OtherLinks .OurBrandsContainer .box-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  border-radius: 20px;
+}
+.Navbar .navlinks .OtherLinks .OurBrandsContainer .box-image img {
+  position: relative;
+  width: 150px;
+  height: auto;
+}
+.Navbar .navlinks .OtherLinks .OurBrandsContainer .box-image.red {
+  background-color: #c2273e;
+}
+
+.Navbar .navlinks .OtherLinks .OurBrandsContainer .box-image.yellow {
+  background-color: #e8fc5f;
+}
+
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Navbar antions
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Navbar .antions {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+.Navbar .antions a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 43px;
+  padding: 0 16px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+.Navbar .antions :nth-child(1) {
+  border: 1px solid #423f53;
+}
+.Navbar .antions :nth-child(2) {
+  color: #fff;
+  background-color: var(--main-color);
+}
+.Navbar .antions a:hover {
+  background-color: #423f53;
+  color: #fff;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Navbar Search box
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Navbar .SearchBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  z-index: 99999;
+  transition: var(--main-transition);
+}
+.Navbar .SearchBox .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Navbar .SearchBox .box {
+  position: relative;
+  padding: 60px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+.Navbar .SearchBox .box .head-search {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.Navbar .SearchBox .box .head-search h1 {
+  position: relative;
+  color: var(--dark-color);
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+.Navbar .SearchBox .box .head-search i {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  color: #fff;
+  transition: var(--main-transition);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.Navbar .SearchBox .box .head-search i:hover {
+  position: relative;
+  background-color: var(--dark-color);
+}
+.Navbar .SearchBox .box .search-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  height: 50px;
+}
+.Navbar .SearchBox .box .search-section .input-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #b6b5bc;
+  color: #b6b5bc;
+  padding: 10px 20px;
+  width: 100%;
+  height: 100%;
+}
+.Navbar .SearchBox .box .search-section .input-box input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: transparent;
+}
+.Navbar .SearchBox .box .search-section .input-box input:focus {
+  border: 0;
+  outline: 0;
+}
+.Navbar .SearchBox .box .search-section .input-box input::placeholder {
+  color: #b6b5bc;
+}
+.Navbar .SearchBox .box .search-section button {
+  position: relative;
+  width: 135px;
+  height: 100%;
+  background-color: var(--main-color);
+  transform: var(--main-transition);
+  border: 0;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.Navbar .SearchBox .box .search-section button:hover {
+  background-color: var(--dark-color);
+}

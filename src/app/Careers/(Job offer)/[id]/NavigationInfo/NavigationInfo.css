@@ -1,0 +1,17 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Navigation Items
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.NavigationInfo {
+  position: relative;
+  padding: 20px 0;
+  background-color: #e7e7ea;
+  height: 90px;
+}
+.NavigationInfo .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
+  font-size: 14px;
+}

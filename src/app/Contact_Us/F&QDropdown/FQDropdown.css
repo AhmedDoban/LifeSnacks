@@ -1,0 +1,109 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# FQDropdown
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.FQDropdown {
+  position: relative;
+  padding-top: calc(var(--main-padding-top));
+  padding-bottom: calc(var(--main-padding-bottom) * 1.5);
+  background-color: #f3f3f3;
+}
+.FQDropdown .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.FQDropdown .container .info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.FQDropdown .container .info span {
+  position: relative;
+  color: var(--dark-color);
+  font-size: 14px;
+  font-weight: 300;
+}
+.FQDropdown .container .info h1 {
+  position: relative;
+  color: var(--dark-color);
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+.FQDropdown .container .questions-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.FQDropdown .container .questions-container .FQBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  transition: var(--main-transition);
+}
+.FQDropdown .container .questions-container .FQBox.open {
+  gap: 10px;
+}
+.FQDropdown .container .questions-container .FQBox.open {
+  background-color: #e7e7ea;
+}
+.FQDropdown .container .questions-container .FQBox h1 {
+  position: relative;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+.FQDropdown .container .questions-container .FQBox h1 i {
+  font-size: 18px;
+  color: var(--main-color);
+  cursor: pointer;
+  z-index: 2;
+  transition: var(--main-transition);
+}
+.FQDropdown .container .questions-container .FQBox.open h1 i {
+  transform: rotate(-180deg);
+  animation: rotateXFlip 0.7s ease-in-out alternate;
+}
+@keyframes rotateXFlip {
+  0% {
+    transform: translateX(0px) rotate(180deg);
+  }
+
+  50% {
+    transform: translateX(15px) rotate(-180deg);
+  }
+
+  100% {
+    transform: translateX(0px) rotate(-180deg);
+  }
+}
+.FQDropdown .container .questions-container .FQBox p {
+  position: relative;
+  color: #575757;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: normal;
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+  z-index: -1;
+  padding: 0;
+  transition: all 0.5s ease-out;
+}
+.FQDropdown .container .questions-container .FQBox.open p {
+  height: auto;
+  padding: 10px 0;
+  opacity: 1;
+  z-index: 2;
+}

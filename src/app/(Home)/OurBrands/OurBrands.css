@@ -1,0 +1,102 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Our Brands
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.OurBrands {
+  position: relative;
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+.OurBrands .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+.OurBrands .container h1 {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 50px;
+}
+@media (max-width: 992px) {
+  .OurBrands .container h1 {
+    font-size: 35px;
+  }
+}
+
+.OurBrands .container .box-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.OurBrands .container .box-container .box-brand {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  width: 260px;
+}
+
+.OurBrands .container .box-container .box-brand .image-box {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.OurBrands .container .box-container .box-brand .videoPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: var(--main-transition);
+}
+.OurBrands .container .box-container .box-brand:hover .videoPlayer {
+  opacity: 1;
+}
+.OurBrands .container .box-container .box-brand .videoPlayer video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.OurBrands .container .box-container .box-brand .image-box.red {
+  background-color: #c2273e;
+}
+.OurBrands .container .box-container .box-brand .image-box.yellow {
+  background-color: #e8fc5f;
+}
+.OurBrands .container .box-container .box-brand .image-box img {
+  width: 150px;
+  height: auto;
+}
+.OurBrands .container .box-container .box-brand a {
+  position: relative;
+  width: 60%;
+  background-color: var(--main-color);
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 10px;
+  transition: var(--main-transition);
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.OurBrands .container .box-container .box-brand a:hover {
+  background-color: var(--dark-color);
+}

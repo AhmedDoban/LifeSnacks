@@ -1,0 +1,150 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Our Values
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.OurValues {
+  position: relative;
+  padding-top: calc(var(--main-padding-top) * 1.5);
+  padding-bottom: calc(var(--main-padding-bottom) * 1.5);
+  background-color: #f3f3f3;
+  width: 100%;
+  overflow: hidden;
+}
+.OurValues .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.OurValues .container .information {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .OurValues .container .information {
+    flex-direction: column;
+  }
+}
+.OurValues .container .information .left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 300px;
+  max-width: 100%;
+}
+.OurValues .container .information .left span {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--dark-color);
+}
+.OurValues .container .information .left h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+.OurValues .container .information .right p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #656460;
+}
+
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Our Values images container
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.OurValues .container .images-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.OurValues .container .images-container .value-box {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.OurValues .container .images-container .value-box .image-actions {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.OurValues .container .images-container .value-box .image-actions::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 0;
+  top: 0;
+  z-index: 1;
+  border-radius: 20px;
+}
+.OurValues .container .images-container .value-box .image-actions img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.OurValues .container .images-container .value-box .image-actions .image-1,
+.OurValues .container .images-container .value-box .image-actions .image-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.OurValues .container .images-container .value-box .image-actions .image-2 {
+  opacity: 0;
+}
+.OurValues
+  .container
+  .images-container
+  .value-box:hover
+  .image-actions
+  .image-2 {
+  opacity: 1;
+}
+
+.OurValues .container .images-container .value-box .value-info {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.OurValues .container .images-container .value-box .value-info h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+}
+.OurValues .container .images-container .value-box .value-info p {
+  color: #cecece;
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 1.2;
+  height: 0;
+  overflow: hidden;
+  transition: var(--main-transition);
+}
+.OurValues .container .images-container .value-box:hover .value-info p {
+  height: 60px;
+  max-height: fit-content;
+}
+.OurValues .container .images-container .value-box .value-info a {
+  font-size: 12px;
+  font-weight: 300;
+  text-decoration: underline;
+  color: #fefdfc;
+}

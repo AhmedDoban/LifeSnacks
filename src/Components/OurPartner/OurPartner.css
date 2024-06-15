@@ -1,0 +1,81 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# OurPartner
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.OurPartner {
+  position: relative;
+  padding-top: calc(var(--main-padding-top));
+  padding-bottom: calc(var(--main-padding-bottom));
+}
+
+.OurPartner .container {
+  position: relative;
+}
+.OurPartner .container h1 {
+  position: relative;
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--dark-color);
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.OurPartner .container .actions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.OurPartner .container .actions button {
+  height: fit-content;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto 0;
+  padding: 10px;
+  border: 0;
+  background-color: transparent;
+  color: #000000;
+  cursor: pointer;
+}
+.OurPartner .container .swiper-conteiner {
+  position: relative;
+  width: 90%;
+}
+@media (max-width: 772px) {
+  .OurPartner .container .swiper-conteiner {
+    width: 80%;
+  }
+}
+.OurPartner .container .swiper-conteiner .OurPartnerCard {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.OurPartner .container .swiper-conteiner .image-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 156px;
+  padding: 10px;
+}
+.OurPartner .container .swiper-conteiner img {
+  width: 100% !important;
+  height: fit-content !important;
+  object-fit: cover;
+}

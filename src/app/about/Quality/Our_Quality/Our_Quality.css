@@ -1,0 +1,74 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Our Quality
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Our_Quality {
+  position: relative;
+  padding-top: calc(var(--main-padding-top));
+  padding-bottom: calc(var(--main-padding-bottom));
+}
+.Our_Quality .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Our_Quality .container .info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.Our_Quality .container .info span {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #130f28;
+}
+.Our_Quality .container .info h3 {
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  color: #130f28;
+}
+
+.Our_Quality .container .Our_Quality_Container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+.Our_Quality .container .Our_Quality_Container .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.Our_Quality .container .Our_Quality_Container .box .imga-box {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  background-color: #e7e7ea;
+  border-radius: 10px;
+  padding: 20px;
+}
+.Our_Quality .container .Our_Quality_Container .box .imga-box img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.Our_Quality .container .Our_Quality_Container .box h4 {
+  position: relative;
+  color: #130f28;
+  font-size: 20px;
+  font-weight: 600;
+}
+.Our_Quality .container .Our_Quality_Container .box p {
+  position: relative;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.7;
+}
