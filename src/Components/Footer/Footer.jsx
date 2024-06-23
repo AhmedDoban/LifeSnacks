@@ -74,7 +74,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="box">
+          <div className="box contactContainer">
             <h3>Contact us</h3>
             <a className="contact-box">
               <i className="fa-solid fa-location-dot"></i>

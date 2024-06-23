@@ -42,13 +42,7 @@ function Navbar() {
               ref={Aboutref}
             >
               About us
-              <i
-                className={
-                  AboutActive
-                    ? "fa-solid fa-arrow-up"
-                    : "fa-solid fa-arrow-down"
-                }
-              ></i>
+              <Image alt="arrow" width={10} height={10} src="/arrowUp.svg" />
             </span>
             <div className={`OtherLinks ${AboutActive && "active"}`}>
               <ul className="OtherNavLinkes">
@@ -62,13 +56,13 @@ function Navbar() {
                   <NavLink href="/about/Quality">Quality</NavLink>
                 </li>
                 <li>
-                  <NavLink href="/about/sustainability">sustainability</NavLink>
+                  <NavLink href="/about/sustainability">Sustainability</NavLink>
                 </li>
                 <li>
-                  <NavLink href="/about/community">community</NavLink>
+                  <NavLink href="/about/community">Community</NavLink>
                 </li>
                 <li>
-                  <NavLink href="/about/Beyond_Egypt">beyond egypt</NavLink>
+                  <NavLink href="/about/Beyond_Egypt">Beyond Egypt</NavLink>
                 </li>
               </ul>
 
@@ -100,13 +94,7 @@ function Navbar() {
               ref={Brandsref}
             >
               Our brands
-              <i
-                className={
-                  BrandsActive
-                    ? "fa-solid fa-arrow-up"
-                    : "fa-solid fa-arrow-down"
-                }
-              ></i>
+              <Image alt="arrow" width={10} height={10} src="/arrowUp.svg" />
             </span>
             <div className={`OtherLinks ${BrandsActive && "active"}`}>
               <div className="OurBrandsContainer">
@@ -167,11 +155,8 @@ function Navbar() {
           <li>
             <NavLink href="/Find_Us">Find Us</NavLink>
           </li>
-          <li>
-            <i
-              className="fa-solid fa-magnifying-glass"
-              onClick={() => SetSearchActive(true)}
-            ></i>
+          <li onClick={() => SetSearchActive(true)}>
+            <Image alt="arrow" width={30} height={15} src="/search.svg" />
           </li>
         </ul>
         <div className="antions">

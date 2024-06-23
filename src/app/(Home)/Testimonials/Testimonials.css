@@ -27,8 +27,8 @@
 
 .Testimonials .container > h1 {
   position: relative;
-  font-weight: 500;
-  font-size: 64px;
+  font-weight: 600;
+  font-size: 50px;
   color: #ffffff;
   margin: 10px auto 30px auto;
   width: 100%;
@@ -81,7 +81,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .Testimonials .container .swiper-conteiner .swiper-slide {
@@ -97,13 +97,13 @@
 }
 .Testimonials .container .swiper-conteiner .TestimonialsCard h1 {
   margin: 0;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   color: var(--dark-color);
 }
 .Testimonials .container .swiper-conteiner .TestimonialsCard p {
   color: var(--dark-color);
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .Testimonials .container .swiper-conteiner .TestimonialsCard .Stars {
@@ -116,7 +116,7 @@
 }
 .Testimonials .container .swiper-conteiner .TestimonialsCard .UserTestimonion {
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
   color: var(--dark-color);
   text-align: center;
 }

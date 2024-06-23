@@ -99,7 +99,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   align-items: flex-start;
   width: 100%;
 }
@@ -219,10 +218,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 43px;
-  padding: 0 16px;
+  height: 38px;
+  padding: 0 30px;
   border-radius: 10px;
   text-transform: capitalize;
+  transition: var(--main-transition);
+}
+@media (max-width: 992px) {
+  .Navbar .antions {
+    gap: 10px;
+  }
+  .Navbar .antions a {
+    padding: 12px;
+  }
 }
 .Navbar .antions :nth-child(1) {
   border: 1px solid #423f53;
@@ -235,6 +243,7 @@
   background-color: #423f53;
   color: #fff;
 }
+
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 # Navbar Search box
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
