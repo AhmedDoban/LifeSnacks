@@ -15,7 +15,7 @@ function Landing() {
       </div>
       <div className="container">
         <div className="content" data-aos="fade-up">
-          <h1>
+          <h1 >
             At our core, we are a team of passionate individuals dedicated to
             providing top-quality products by using superior ingredients.
           </h1>

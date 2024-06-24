@@ -1,5 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
-# General elements
+# General element
 ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
 * {
   margin: 0;
@@ -82,4 +85,7 @@ p {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #000000;
+}
+.hideScroll::-webkit-scrollbar {
+  display: none;
 }
