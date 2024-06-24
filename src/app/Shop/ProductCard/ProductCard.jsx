@@ -19,7 +19,7 @@ function ProductCard({ image, title, subtitle, price }) {
       <div className="actions">
         <button>
           <span>Add to cart</span>
-          <Image src="/Shop/cartIcon.png" width={50} height={50} />
+          <Image src="/Shop/cartIcon.png" width={50} height={50} alt={title} />
         </button>
       </div>
     </div>

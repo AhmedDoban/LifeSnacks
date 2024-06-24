@@ -2,7 +2,7 @@
 import LayoutWebsite from "./LayoutWebsite/index.jsx";
 import { useState } from "react";
 import AllProducts from "./All Products/AllProducts.jsx";
-function page() {
+function Page() {
   const [Filter, SetFilter] = useState("All brands");
   return (
     <LayoutWebsite Filter={Filter} SetFilter={SetFilter}>
@@ -10,4 +10,4 @@ function page() {
     </LayoutWebsite>
   );
 }
-export default page;
+export default Page;
