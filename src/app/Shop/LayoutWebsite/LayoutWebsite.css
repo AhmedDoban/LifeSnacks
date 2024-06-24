@@ -6,6 +6,7 @@
   display: flex;
   gap: 10px;
   width: 100%;
+  max-width: 100%;
 }
 
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
@@ -46,6 +47,7 @@
     min-width: 0;
     opacity: 0;
     overflow: hidden;
+    display: none;
   }
   .ShopPage .shop-sidebar.close {
     position: fixed;
@@ -58,6 +60,7 @@
     opacity: 1;
     padding: 1rem 2rem;
     backdrop-filter: blur(50px);
+    display: flex;
   }
   .ShopPage .shop-sidebar .CloseMarkMob {
     position: absolute;

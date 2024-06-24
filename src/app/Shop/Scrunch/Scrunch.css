@@ -1,0 +1,93 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Scrunch
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.ShopScrunch {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ShopScrunch .filter-part {
+  position: sticky;
+  background-color: #fff;
+  top: 250px;
+  z-index: 1;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 0 20px 0;
+}
+@media (max-width: 992px) {
+  .ShopScrunch .filter-part {
+    position: relative;
+    top: 0;
+  }
+}
+.ShopScrunch .filter-part h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: #130f28;
+}
+.ShopScrunch .filter-part .filter-products {
+  position: relative;
+}
+.ShopScrunch .filter-part .filter-products .box {
+  position: relative;
+}
+.ShopScrunch .filter-part .filter-products .box {
+  position: relative;
+  width: fit-content;
+  width: 100%;
+  height: 100px;
+  height: fit-content;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid #4e8d40;
+  background-color: #edf4ec;
+  transition: var(--main-transition);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.ShopScrunch .filter-part .filter-products .box:hover,
+.ShopScrunch .filter-part .filter-products .box.active {
+  background-color: #4e8d40;
+}
+
+.ShopScrunch .filter-part .filter-products .box img {
+  position: relative;
+  width: auto;
+  height: 50px;
+  object-fit: contain;
+}
+
+.ShopScrunch .filter-part .filter-products .box p {
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #4e8d40;
+  transition: var(--main-transition);
+  text-wrap: nowrap;
+}
+
+.ShopScrunch .filter-part .filter-products .box:hover p,
+.ShopScrunch .filter-part .filter-products .box.active p {
+  color: #fff;
+}
+
+.ShopScrunch .ShopScrunch-productsContainer {
+  position: relative;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
