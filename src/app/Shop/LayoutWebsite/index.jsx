@@ -16,10 +16,9 @@ import instegram from "../../../../public/Shop/instegram.svg";
 import tiktok from "../../../../public/Shop/tiktok.svg";
 import Link from "next/link";
 import logout from "../../../../public/Shop/logout.svg";
-import { usePathname } from "next/navigation";
 import NavLink from "@/Components/Navbar/NavLink";
 
-const Index = ({ children }) => {
+const Index = ({ children, Filter, SetFilter }) => {
   const [openMenu, setOpenMenu] = useState(true);
 
   return (
@@ -29,6 +28,10 @@ const Index = ({ children }) => {
         className={`shop-sidebar ${openMenu ? "" : "close"}`}
       >
         <div className="nav-content">
+          <i
+            className="fa-solid fa-xmark CloseMarkMob"
+            onClick={() => setOpenMenu(!openMenu)}
+          ></i>
           <Image src={logo} alt="logo" className="Logo" />
           <div className="shop-sidebar-content">
             <p className="shop-sidebar-loyalty-text">Loyalty coins</p>
@@ -55,19 +58,19 @@ const Index = ({ children }) => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink href={"#"} className="shop-sidebar-menu-item">
+                  <NavLink href="/" className="shop-sidebar-menu-item">
                     <Image src={loyality} alt="loyality" />
                     <p>Loyalty coins</p>
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink href={"#"} className="shop-sidebar-menu-item">
+                  <NavLink href="/" className="shop-sidebar-menu-item">
                     <Image src={orderHistory} alt="home" />
                     <p>Order history</p>
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink href={"#"} className="shop-sidebar-menu-item">
+                  <NavLink href="/" className="shop-sidebar-menu-item">
                     <Image src={branches} alt="home" />
                     <p>Branches</p>
                   </NavLink>
@@ -118,19 +121,54 @@ const Index = ({ children }) => {
             </div>
           </div>
           <div className="shop-header-nav">
-            {/* <NavMenu label="Best Sellers" />
-            <NavMenu label="Best Sellers" />
-            <NavMenu label="Best Sellers" />
-            <NavMenu label="Best Sellers" />
-            <NavMenu label="Best Sellers" />
-            <NavMenu label="Best Sellers" />
-            <NavMenu label="Best Sellers" />
-            <NavMenu label="Best Sellers" />
-            <NavMenu label="Best Sellers" />
-            <NavMenu label="Best Sellers" />
-            <NavMenu label="Best Sellers" />
-            <NavMenu label="Best Sellers" />
-            <NavMenu label="Best Sellers" /> */}
+            <div
+              className={`box ${Filter === "All brands" && "active"}`}
+              onClick={() => SetFilter("All brands")}
+            >
+              <Image
+                alt="All brands"
+                src="/Shop/All.svg"
+                width={100}
+                height={100}
+              />
+              <p>All brands</p>
+            </div>
+            <div
+              className={`box ${Filter === "Scrunch" && "active"}`}
+              onClick={() => SetFilter("Scrunch")}
+            >
+              <Image
+                alt="Scrunch"
+                src="/Shop/Scrunch.png"
+                width={100}
+                height={100}
+              />
+              <p>Scrunch</p>
+            </div>
+            <div
+              className={`box ${Filter === "Wunder" && "active"}`}
+              onClick={() => SetFilter("Wunder")}
+            >
+              <Image
+                alt="Wunder"
+                src="/Shop/Wunder.png"
+                width={100}
+                height={100}
+              />
+              <p>Wunder</p>
+            </div>
+            <div
+              className={`box ${Filter === "Bake at home" && "active"}`}
+              onClick={() => SetFilter("Bake at home")}
+            >
+              <Image
+                alt="Bake at home"
+                src="/Shop/Bake at home.png"
+                width={100}
+                height={100}
+              />
+              <p>Bake at home</p>
+            </div>
           </div>
         </div>
         <div className="shop-content">{children}</div>

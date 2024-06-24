@@ -15,7 +15,6 @@ export const metadata: Metadata = {
   title: "Life snacks",
   description: "Sweet",
 };
-const montserate = Montserrat({ subsets: ["latin"], weight: ["300", "500"] });
 
 export default function RootLayout({
   children,
@@ -24,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserate.className}>
+      <body>
         <AOSProvider>{children}</AOSProvider>
       </body>
     </html>

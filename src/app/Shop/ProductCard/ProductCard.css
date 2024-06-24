@@ -1,0 +1,107 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# ProductCard
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.ProductCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+.ProductCard .img-card {
+  position: relative;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+}
+.ProductCard .img-card img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.ProductCard .info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ProductCard .info h1 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: #130f28;
+}
+.ProductCard .info p {
+  position: relative;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  color: #70708f;
+}
+.ProductCard .info h3 {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+.ProductCard .info h3 span {
+  position: relative;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  color: #130f28;
+}
+.ProductCard .info h3 p {
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  color: #130f28;
+}
+
+.ProductCard .actions {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.ProductCard .actions button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 60px;
+  border: 0;
+  padding: 10px;
+  width: 100%;
+  gap: 20px;
+  border-radius: 56px;
+  background-color: #4e8d40;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: #fff;
+  cursor: pointer;
+}
+.ProductCard .actions img {
+  position: relative;
+  width: 20px;
+  height: auto;
+}

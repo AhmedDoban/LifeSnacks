@@ -47,10 +47,10 @@ function Navbar() {
             <div className={`OtherLinks ${AboutActive && "active"}`}>
               <ul className="OtherNavLinkes">
                 <li>
-                  <NavLink href="/about/Our_Story">Our sroty</NavLink>
+                  <NavLink href="/about/Our_Story">Our Story</NavLink>
                 </li>
                 <li>
-                  <NavLink href="/about/Our_Values">Our values</NavLink>
+                  <NavLink href="/about/Our_Values">Our Values</NavLink>
                 </li>
                 <li>
                   <NavLink href="/about/Quality">Quality</NavLink>

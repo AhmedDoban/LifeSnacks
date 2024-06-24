@@ -27,11 +27,13 @@
 }
 .Footer .container .footer-content .box p {
   font-size: 12px;
+  font-weight: 300;
+  color: #130f28;
 }
 .Footer .container .footer-content .box h3 {
   color: var(--dark-color);
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
 }
 .Footer .container .footer-content .box .inside-box {
   position: relative;
@@ -40,7 +42,7 @@
   gap: 10px;
 }
 .Footer .container .footer-content .box .inside-box span {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
 }
 .Footer .container .footer-content .box .inside-box ul {
@@ -52,7 +54,8 @@
 .Footer .container .footer-content .box .inside-box ul li {
   position: relative;
   padding-left: 20px;
-  font-size: 14px;
+  font-size: 12px;
+  color: #130f28;
 }
 .Footer .container .footer-content .box .inside-box ul li::before {
   position: absolute;
@@ -76,8 +79,9 @@
   gap: 10px;
 }
 .Footer .container .footer-content .box .social-media-box .social h3 {
-  font-size: 14px;
-  font-weight: 600;
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
 }
 .Footer .container .footer-content .box .social-media-box .container-social {
   display: grid;

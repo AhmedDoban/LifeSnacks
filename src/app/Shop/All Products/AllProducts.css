@@ -1,0 +1,24 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# All products
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.AllProducts {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.AllProducts > h2 {
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: #130f28;
+}
+.AllProducts .AllProductsContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}

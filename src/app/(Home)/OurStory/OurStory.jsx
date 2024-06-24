@@ -10,7 +10,7 @@ function OurStory() {
           <Image src="/OurStory.jpg" alt="ourStory" width={400} height={400} />
         </div>
         <div className="right">
-          <span data-aos="fade-down">Our story</span>
+          <span data-aos="fade-down">Our Story</span>
           <h1 data-aos="fade-down"> Life Snacks</h1>
           <p data-aos="fade-down">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero,
@@ -19,7 +19,7 @@ function OurStory() {
             incidunt eaque. Quod, eum.
           </p>
           <NavLink href="Our Story" data-aos="fade-down">
-            Learn More
+            Learn more
           </NavLink>
         </div>
       </div>
