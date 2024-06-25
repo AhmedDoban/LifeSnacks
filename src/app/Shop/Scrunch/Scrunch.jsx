@@ -110,7 +110,7 @@ function Scrunch() {
       </div>
 
       <div className="ShopScrunch-productsContainer">
-        {DummyProducts.map((el) => (
+        {DummyProducts.map((el, index) => (
           <ProductCard
             image={el.image}
             title={el.name}
@@ -118,6 +118,7 @@ function Scrunch() {
               "Premium quality 70% Belgian Dark Chocolate Bark will indulge in your senses feelings its rich flavor blending with the crunchy honeycomb pieces."
             }
             price={100}
+            key={index}
           />
         ))}
       </div>
