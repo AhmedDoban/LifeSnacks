@@ -9,14 +9,14 @@ function Exports() {
       name: "Lebanon",
       description:
         "Lorem ipsum dolor sit amet consectetur. Nunc cursus duis libero id enim a urna. Porttitor vivamus mauris tempus est suspendisse ultrices.",
-      logo: "/Lebanon.png",
+      logo: "/Lebanon.svg",
       location: "/LebanonLocation.png",
     },
     {
       name: "Jordan",
       description:
         "Lorem ipsum dolor sit amet consectetur. Nunc cursus duis libero id enim a urna. Porttitor vivamus mauris tempus est suspendisse ultrices.",
-      logo: "/Jordan.png",
+      logo: "/Jordan.svg",
       location: "/JordanLocation.png",
     },
   ]);

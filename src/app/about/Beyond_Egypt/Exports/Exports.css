@@ -27,11 +27,15 @@
   position: relative;
   color: #656460;
   font-size: 13px;
+  font-weight: 300;
 }
 .Beyond_EgyptExports .container .info h4 {
   position: relative;
   color: #000000;
   font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
 }
 .Beyond_EgyptExports .container .Exports-country {
   position: relative;
@@ -68,9 +72,18 @@
   gap: 10px;
   width: 100%;
 }
+.Beyond_EgyptExports .container .Exports-country .information .headInfo h5 {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+}
 .Beyond_EgyptExports .container .Exports-country .box .information P {
   position: relative;
   font-size: 12px;
   line-height: 1.3;
   text-align: left;
+  color: #656460;
+  font-weight: 300;
 }
