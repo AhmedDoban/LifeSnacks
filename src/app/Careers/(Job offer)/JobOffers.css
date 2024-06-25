@@ -117,8 +117,13 @@
   flex-wrap: wrap;
 }
 .JobOffers .container .job-box .job-head span {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
+  color: #000000;
+  transition: var(--main-transition);
+}
+.JobOffers .container .job-box:hover .job-head span {
+  color: #fff;
 }
 .JobOffers .container .job-box .job-head .date {
   position: relative;
@@ -126,6 +131,7 @@
   align-items: center;
   gap: 10px;
   font-size: 14px;
+  color: #000000;
 }
 .JobOffers .container .job-box .job-head .date i {
   position: relative;
@@ -138,31 +144,40 @@
 .JobOffers .container .job-box .job-head .date p {
   position: relative;
   font-size: 14px;
+  color: #000;
+  font-weight: 400;
   transition: var(--main-transition);
 }
-
+.JobOffers .container .job-box:hover .job-head .date p {
+  color: #fff;
+}
 .JobOffers .container .job-box .job-title h1 {
   font-size: 24px;
   font-weight: 500;
   margin: 15px 0;
+  line-height: 1.2;
 }
 .JobOffers .container .job-box .job-location {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
 }
 .JobOffers .container .job-box .job-location p {
   position: relative;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.2;
+  font-weight: 300;
+  color: var(--dark-color);
   transition: var(--main-transition);
+  width: 80%;
 }
 .JobOffers .container .job-box .job-location i {
   position: relative;
   font-size: 14px;
   color: var(--main-color);
   transition: var(--main-transition);
+  margin-top: 5px;
 }
 
 .JobOffers .container .job-box:hover p,

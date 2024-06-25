@@ -293,7 +293,7 @@
   position: relative;
   color: var(--dark-color);
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
 }
 .Navbar .SearchBox .box .head-search i {

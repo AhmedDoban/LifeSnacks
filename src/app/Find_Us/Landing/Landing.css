@@ -35,12 +35,16 @@
   gap: 10px;
   margin: 0 auto;
   color: #fefdfc;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
 }
 .FindItemsLanding .container .navigation-info a {
   color: #fefdfc;
   cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
 }
 .FindItemsLanding .container .box-info {
   position: relative;
@@ -55,10 +59,11 @@
   font-size: 50px;
   color: #fefdfc;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 1.2;
 }
-@media (max-width:992px) {
-  .FindItemsLanding .container .box-info h1{
+@media (max-width: 992px) {
+  .FindItemsLanding .container .box-info h1 {
     font-size: 35px;
   }
 }

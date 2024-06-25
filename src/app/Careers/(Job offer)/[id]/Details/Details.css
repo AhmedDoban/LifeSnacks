@@ -33,14 +33,15 @@
 }
 .JobOfferDetailsInfo .container .box h1 {
   margin: 0;
+  font-weight: 500;
 }
 .JobOfferDetailsInfo .container .box > h1 {
-  font-size: 46px;
-  font-weight: 600;
+  font-size: 44px;
+  font-weight: 500;
 }
 .JobOfferDetailsInfo .container .box h4 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
@@ -68,7 +69,8 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
+  margin-bottom: 5px;
 }
 .JobOfferDetailsInfo .container .box .date-location div {
   position: relative;
@@ -84,8 +86,8 @@
 .JobOfferDetailsInfo .container .box .date-location div p {
   position: relative;
   font-size: 14px;
-  color: rgb(74, 74, 74);
-  font-weight: 100;
+  color: #000;
+  font-weight: 400;
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 # Job Offers Details  job description
@@ -98,13 +100,13 @@
 .JobOfferDetailsInfo .container .box .job-description h1 {
   position: relative;
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 20px;
 }
 .JobOfferDetailsInfo .container .box .job-description p {
   position: relative;
   font-size: 14px;
-  font-weight: 100;
-  color: rgb(74, 74, 74);
+  font-weight: 300;
+  color: #000;
   line-height: normal;
 }
 .JobOfferDetailsInfo .container .box .job-description ul {
@@ -116,14 +118,14 @@
   position: relative;
   padding-left: 30px;
   font-size: 14px;
-  font-weight: 100;
-  color: rgb(74, 74, 74);
+  font-weight: 300;
+  color: #000;
 }
 
 .JobOfferDetailsInfo .container .box .job-description ul li::before {
   position: absolute;
   content: "";
-  background-color: rgb(74, 74, 74);
+  background-color: #000;
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
@@ -142,7 +144,7 @@
 .JobOfferDetailsInfo .container .job-requirements h1 {
   position: relative;
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 20px;
 }
 .JobOfferDetailsInfo .container .job-requirements ul {
   position: relative;
@@ -159,8 +161,8 @@
   position: relative;
   padding-left: 30px;
   font-size: 14px;
-  font-weight: 100;
-  color: rgb(74, 74, 74);
+  font-weight: 300;
+  color: #000;
 }
 .JobOfferDetailsInfo .container .job-requirements ul.Check li::before {
   position: absolute;
@@ -180,7 +182,7 @@
 .JobOfferDetailsInfo .container .job-offer h1 {
   position: relative;
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 20px;
 }
 .JobOfferDetailsInfo .container .job-offer ul {
   position: relative;
@@ -191,14 +193,14 @@
   position: relative;
   padding-left: 30px;
   font-size: 14px;
-  font-weight: 100;
-  color: rgb(74, 74, 74);
+  font-weight: 300;
+  color: #000;
 }
 
 .JobOfferDetailsInfo .container .job-offer ul li::before {
   position: absolute;
   content: "";
-  background-color: rgb(74, 74, 74);
+  background-color: #000;
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
@@ -209,8 +211,8 @@
 .JobOfferDetailsInfo .container .job-offer p {
   position: relative;
   font-size: 14px;
-  color: rgb(74, 74, 74);
-  font-weight: 100;
+  color: #000;
+  font-weight: 300;
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 # Job Offers Details  job description
@@ -236,6 +238,8 @@
   position: relative;
   border: 1px solid #b6b5bc;
   outline: 0;
+  min-width: 150px;
+  max-width: 100%;
   padding: 10px 14px;
   background-color: var(--main-color);
   border-radius: 10px;
