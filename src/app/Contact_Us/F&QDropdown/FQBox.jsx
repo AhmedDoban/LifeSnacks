@@ -7,12 +7,11 @@ function FQBox({ question }) {
     <div className={Open ? "FQBox open" : "FQBox"}>
       <h1>
         <span>{question.question}</span>
-    
-   <i
-            className="fa-solid fa-arrow-down"
-            onClick={() => SetOpen(!Open)}
-          ></i>
 
+        <i
+          className="fa-solid fa-arrow-down"
+          onClick={() => SetOpen(!Open)}
+        ></i>
       </h1>
       <p>{question.answer}</p>
     </div>

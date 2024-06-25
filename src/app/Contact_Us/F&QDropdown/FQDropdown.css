@@ -29,7 +29,7 @@
   position: relative;
   color: var(--dark-color);
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
 }
 .FQDropdown .container .questions-container {
@@ -90,9 +90,9 @@
 }
 .FQDropdown .container .questions-container .FQBox p {
   position: relative;
-  color: #575757;
+  color: #000000;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: normal;
   overflow: hidden;
   opacity: 0;
