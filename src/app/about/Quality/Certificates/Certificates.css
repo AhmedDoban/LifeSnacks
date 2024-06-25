@@ -29,14 +29,14 @@
 .Certificates .container .CertificatesLogo h1 {
   position: relative;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--dark-color);
 }
 .Certificates .container > p {
   position: relative;
   font-size: 14px;
   font-weight: 300;
-  color: var(--dark-color);
+  color: #656460;
 }
 
 .Certificates .container .Certificates-container {

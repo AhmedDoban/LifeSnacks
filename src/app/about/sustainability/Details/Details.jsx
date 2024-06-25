@@ -6,7 +6,7 @@ function Details() {
       <div className="container">
         <div className="data" data-aos="fade-down">
           <span>Sustainability</span>
-          <h1>How can we formulate this and use it </h1>
+          <h1>How Can We Formulate This And Use It </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur. Cursus et pretium tortor
             semper elit sed. Felis odio adipiscing vel cursus tortor diam

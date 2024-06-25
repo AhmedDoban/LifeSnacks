@@ -28,7 +28,7 @@
 .Our_Quality .container .info h3 {
   position: relative;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   color: #130f28;
 }
 
@@ -63,12 +63,11 @@
   position: relative;
   color: #130f28;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .Our_Quality .container .Our_Quality_Container .box p {
   position: relative;
   color: #000000;
   font-size: 14px;
   font-weight: 300;
-  opacity: 0.7;
 }

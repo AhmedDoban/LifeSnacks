@@ -35,12 +35,16 @@
   gap: 10px;
   margin: 0 auto;
   color: #fefdfc;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
 }
 .sustainabilityLanding .container .navigation-info a {
   color: #fefdfc;
   cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
 }
 .sustainabilityLanding .container .box-info {
   position: relative;
@@ -53,9 +57,10 @@
 .sustainabilityLanding .container .box-info h1 {
   position: relative;
   font-size: 50px;
-  color: #fefdfc;
+  color: #ffffff;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 1.2;
 }
 @media (max-width: 992px) {
   .sustainabilityLanding .container .box-info h1 {

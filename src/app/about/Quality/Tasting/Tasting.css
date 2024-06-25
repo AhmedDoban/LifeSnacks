@@ -33,7 +33,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 .Tasting .container .box span {
   position: relative;
@@ -45,7 +45,7 @@
   position: relative;
   color: #130f28;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media (max-width: 992px) {
   .Tasting .container .box h1 {
@@ -54,9 +54,9 @@
 }
 .Tasting .container .box h3 {
   position: relative;
-  color: #000;
+  color: #000000;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .Tasting .container .box p {
   position: relative;
