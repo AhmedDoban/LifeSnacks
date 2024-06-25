@@ -70,6 +70,7 @@
   flex-direction: column;
 }
 .RecipesDetails .container .box h3 {
+  position: relative;
   font-size: 14px;
   color: var(--dark-color);
   margin: 0;
@@ -86,8 +87,12 @@
   flex-wrap: wrap;
 }
 .RecipesDetails .container .box .more-details h1 {
+  position: relative;
   margin: 0;
   padding: 0;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
 }
 @media (max-width: 992px) {
   .RecipesDetails .container .box .more-details h1 {
@@ -110,7 +115,11 @@
   color: var(--main-color);
 }
 .RecipesDetails .container .box .more-details .timing .box span {
-  color: var(--dark-color);
+  color: #423f53;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
 }
 /*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 # Recipes Details box style2
@@ -126,9 +135,10 @@
 }
 .RecipesDetails .container .style-2 h4 {
   position: relative;
-  font-size: 22px;
+  font-size: 20px;
   color: var(--dark-color);
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 32px;
 }
 .RecipesDetails .container .style-2 ul {
   position: relative;
@@ -146,6 +156,8 @@
   padding-left: 30px;
   font-size: 14px;
   font-weight: 300;
+  color: #130f28;
+  line-height: 1.3;
 }
 .RecipesDetails .container .style-2 ul.Number {
   counter-reset: Number;
@@ -156,7 +168,8 @@
   padding-left: 20px;
   font-size: 14px;
   font-weight: 100;
-  color: var(--dark-color);
+  color: #130f28;
+  line-height: 1.3;
 }
 .RecipesDetails .container .style-2 ul.Check li::before {
   position: absolute;
@@ -171,7 +184,8 @@
   position: absolute;
   counter-increment: Number;
   content: counter(Number) "-";
-  color: var(--dark-color);
   left: 0;
   font-size: 14px;
+  font-weight: 300;
+  color: #130f28;
 }

@@ -35,12 +35,16 @@
   gap: 10px;
   margin: 0 auto;
   color: #fefdfc;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
 }
 .ReciepesLanding .container .navigation-info a {
   color: #fefdfc;
   cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
 }
 .ReciepesLanding .container .box-info {
   position: relative;
@@ -50,15 +54,16 @@
   align-items: center;
   justify-content: center;
 }
-.ReciepesLanding .container .box-info h1 {
+.ReciepesLanding .container h1 {
   position: relative;
   font-size: 50px;
   color: #fefdfc;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 1.2;
 }
-@media (max-width:992px) {
-  .ReciepesLanding .container .box-info h1{
+@media (max-width: 992px) {
+  .ReciepesLanding .container .box-info h1 {
     font-size: 35px;
   }
 }

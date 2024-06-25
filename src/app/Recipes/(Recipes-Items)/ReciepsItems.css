@@ -17,7 +17,7 @@
   position: relative;
   font-size: 28px;
   color: var(--dark-color);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .ReciepsItems .container .ReciepsItemsContainer {
@@ -96,8 +96,15 @@
   align-items: center;
   gap: 3px;
   font-size: 12px;
+  color: #130f28;
+  font-weight: 300;
+}
+.ReciepsItems .container .ReciepsItemsContainer .card .timing .box i {
   color: var(--main-color);
+  font-size: 10px;
 }
 .ReciepsItems .container .ReciepsItemsContainer .card .timing .box span {
-  color: var(--dark-color);
+  color: #130f28;
+  margin: 0;
+  font-weight: 300;
 }
