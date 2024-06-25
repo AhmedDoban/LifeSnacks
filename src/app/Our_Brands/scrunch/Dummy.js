@@ -31,19 +31,19 @@ export const DummyProducts = [
         name: "Cranberry",
         description:
           "The tiny members of the berry’s family, selected perfectly to balance the sweetness of SCRUNCH snack.",
-        image: "/Scrunch/product3Com1.png",
+        image: "/Scrunch/product2Com1.png",
       },
       {
         name: "Dark Chocolate",
         description:
           "Heart saver and day maker. The dark chocolate bark is packed with health benefits that will make your body feel better and satisfied throughout the day.",
-        image: "/Scrunch/product2Com1.png",
+        image: "/Scrunch/product3Com1.png",
       },
       {
         name: "Almonds",
         description:
           "#1 Nutritious nuts, almonds are as close to perfect as a food can get.",
-        image: "/Scrunch/product3Com2.png",
+        image: "/Scrunch/product2Com2.png",
       },
     ],
   },

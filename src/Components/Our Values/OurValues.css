@@ -34,14 +34,16 @@
   max-width: 100%;
 }
 .OurValues .container .information .left span {
+  position: relative;
   font-size: 14px;
   font-weight: 300;
   color: var(--dark-color);
 }
 .OurValues .container .information .left h3 {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--dark-color);
+  letter-spacing: normal;
 }
 .OurValues .container .information .right p {
   font-size: 14px;
@@ -125,14 +127,14 @@
   gap: 5px;
 }
 .OurValues .container .images-container .value-box .value-info h3 {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 20px;
-  color: #fff;
+  color: #fefdfc;
 }
 .OurValues .container .images-container .value-box .value-info p {
-  color: #cecece;
+  color: #fefdfc;
   font-size: 12px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.2;
   height: 0;
   overflow: hidden;
@@ -147,4 +149,7 @@
   font-weight: 300;
   text-decoration: underline;
   color: #fefdfc;
+}
+.OurValues .container .images-container .value-box:hover .value-info a {
+  text-decoration: none;
 }

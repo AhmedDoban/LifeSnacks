@@ -35,12 +35,16 @@
   gap: 10px;
   margin: 0 auto;
   color: #fefdfc;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
 }
 .Our_ValuesLanding .container .navigation-info a {
   color: #fefdfc;
   cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
 }
 .Our_ValuesLanding .container .box-info {
   position: relative;
@@ -57,7 +61,7 @@
   font-size: 50px;
   color: #fefdfc;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media (max-width: 992px) {
   .Our_ValuesLanding .container .box-info h1 {
@@ -81,6 +85,5 @@
   transition: var(--main-transition);
 }
 .Our_ValuesLanding .container .box-info .actions a:hover {
-  background-color: var(--main-color);
-  border: 1px solid var(--main-color);
+  background-color: var(--dark-color);
 }

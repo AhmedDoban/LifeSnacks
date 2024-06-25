@@ -5,12 +5,14 @@
   position: relative;
   padding-top: calc(var(--main-padding-top) * 1.5);
   padding-bottom: calc(var(--main-padding-bottom) * 1.5);
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
 }
 .OurMission .container {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 80px;
+  justify-content: center;
+  gap: 100px;
   height: 100%;
 }
 
@@ -20,6 +22,7 @@
   padding: 20px;
   min-height: 500px;
   min-width: 400px;
+  max-width: 400px;
   height: 100%;
 }
 .OurMission .container .left::before {
@@ -49,26 +52,30 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
+  width: 50%;
 }
 @media (max-width: 992px) {
   .OurMission .container .right {
     align-items: center;
     text-align: center;
+    width: 100%;
   }
 }
 
 .OurMission .container .right span {
   position: relative;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--dark-color);
+  font-weight: 400;
 }
 .OurMission .container .right h1 {
   position: relative;
-  font-size: 64px;
+  font-size: 55px;
   color: var(--dark-color);
   margin: 0 !important;
   line-height: 50px;
+  font-weight: 500;
 }
 @media (max-width: 992px) {
   .OurMission .container .right h1 {
@@ -78,8 +85,14 @@
 
 .OurMission .container .right p {
   position: relative;
-  font-size: 16px;
-  color: var(--dark-color);
+  font-size: 14px;
+  color: #656460;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
 }
-
-
+@media (max-width: 992px) {
+  .OurMission .container .right p {
+    text-align: center;
+  }
+}

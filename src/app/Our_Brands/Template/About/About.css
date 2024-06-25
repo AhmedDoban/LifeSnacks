@@ -58,15 +58,19 @@
 
 .Our_BrandsAbout .container .right span {
   position: relative;
-  font-size: 16px;
   color: #fefdfc;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
 }
 .Our_BrandsAbout .container .right h1 {
   position: relative;
-  font-size: 64px;
   color: #fefdfc;
   margin: 0 !important;
   line-height: 50px;
+  font-size: 55px;
+  font-weight: 500;
+  text-align: left;
 }
 @media (max-width: 992px) {
   .Our_BrandsAbout .container .right h1 {

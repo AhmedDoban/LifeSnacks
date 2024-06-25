@@ -36,9 +36,7 @@
   position: relative;
   width: calc(50% - 25px);
 }
-.timeline .timeline-content > :not(:last-child) {
-  margin-bottom: 20px;
-}
+
 .timeline .timeline-content .right {
   float: right;
 }
@@ -64,7 +62,8 @@
 .timeline .timeline-content .content p {
   font-size: 14px;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 24px;
+  color: #000;
 }
 
 .clearfix {
@@ -74,6 +73,10 @@
 .timeline .timeline-content .right .year {
   position: relative;
   padding-left: 120px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
 }
 .timeline .timeline-content .right .year::before {
   position: absolute;
@@ -98,6 +101,10 @@
 .timeline .timeline-content .left .year {
   position: relative;
   padding-right: 120px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
 }
 .timeline .timeline-content .left .year::before {
   position: absolute;
@@ -137,9 +144,10 @@
   left: 0;
   padding: 10px;
   font-size: 75px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
   z-index: 2;
+  color: #130f28;
 }
 @media (max-width: 992px) {
   .timeline .timeline-content .left,
@@ -162,9 +170,9 @@
     z-index: 2;
     padding: 10px !important;
     margin-bottom: 10px;
-    color: #fff;
-    font-size: 14px;
-    background-color: #1787e0;
+    color: #fff !important;
+    font-size: 16px !important;
+    background-color: var(--main-color);
     width: fit-content;
     border-radius: 0.5em;
     margin: 20px auto;

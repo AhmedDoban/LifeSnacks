@@ -15,9 +15,9 @@ function Landing() {
         </div>
         <div className="box-info" data-aos="fade-up">
           <h1>
-            the story behindthe
+            the story behind
             <br />
-            name Lifesnacks it’s a
+            the name Lifesnacks it’s a
             <br />
             community, a movement
             <br />

@@ -64,7 +64,7 @@ function Page() {
           <div className="right" data-aos="fade-down">
             <div className="info">
               <span>Ingredient</span>
-              <h3>WHAT’S INSIDE?</h3>
+              <h3>What's inside?</h3>
             </div>
             <ul className="integrates">
               {SingleProduct.Ingredient.map((ele) => (

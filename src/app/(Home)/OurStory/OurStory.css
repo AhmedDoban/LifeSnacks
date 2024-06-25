@@ -91,7 +91,11 @@
   line-height: 24px;
   text-align: left;
 }
-
+@media (max-width: 992px) {
+  .OurStory .container .right p {
+    text-align: center;
+  }
+}
 .OurStory .container .right a {
   position: relative;
   background-color: var(--main-color);

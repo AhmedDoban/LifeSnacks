@@ -12,7 +12,7 @@ function TimeLine() {
               width={300}
               height={200}
               alt="TimeLine 1"
-              src="/TimeLine1.png"
+              src="/TimeLine1.svg"
             />
           </div>
 
@@ -99,7 +99,7 @@ function TimeLine() {
                 width={300}
                 height={200}
                 alt="TimeLine 2"
-                src="/TimeLine2.png"
+                src="/TimeLine2.svg"
               />
             </div>
           </div>
