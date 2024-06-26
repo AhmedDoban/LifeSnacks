@@ -117,7 +117,7 @@ function Navbar() {
                     <div className="box-image yellow">
                       <Image
                         alt="snaks1"
-                        src="/Navbar/Wunder.png"
+                        src="/Navbar/wunder.png"
                         width={200}
                         height={200}
                       />
